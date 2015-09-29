@@ -30,6 +30,7 @@ body {
   color: #202020;
   font-family: "Avenir Next", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 100;
+ 
 }
 
 h1 {
@@ -53,6 +54,78 @@ p {
 
 a {
   font-weight: 400;
+}
+
+.site {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: left;  
+}
+
+
+.site__main {
+  width:70%;
+  display: flex;
+  background-color:rgba(255, 0, 0, 0.3);
+  
+  flex-direction:row;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.site__right-sidebar {     
+   position: fixed;
+   height: 100%;
+   width:30%;
+}
+
+.site__left-sidebar {
+  width: 170px;
+  position:fixed;
+}
+
+.site__content {
+  padding-left: 170px;
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.site__right-sidebar .checkout {
+  flex-grow: 0;
+  flex-basis: auto;
+  align-self: stretch;
+}
+
+.site__right-sidebar .cart {
+  flex-grow: 1;
+  flex-basis: 0;
+  align-self: stretch;
+  overflow:scroll;
+}
+
+.cart-item {
+  height: 150px;
+  margin-bottom: 20px;
+  background: rgba(0,255,0,0.3);
+}
+
+.checkout {
+  height: 300px;
+  background: rgba(0,0,255,0.3);
+}
+
+.products {
+   flex-direction:row;
+   align-items: flex-start;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+.product {
+  width: 50%;
+  height: 250px;
+  background-color: rgba(0, 255, 0, 0.3);
 }
 
 /*a:hover {
