@@ -594,11 +594,6 @@ a {
   overflow:scroll;
 }
 
-.checkout {
-  height: 300px;
-  background: rgba(0,0,255,0.3);
-}
-
 .products {
    -webkit-box-orient:horizontal;
    -webkit-box-direction:normal;
@@ -819,6 +814,197 @@ a {
   padding-right: 10px;
 }
 
+.checkout {
+  height: 300px;
+  
+  -webkit-box-orient: vertical;
+  
+  -webkit-box-direction: normal;
+  
+  -webkit-flex-direction: column;
+  
+      -ms-flex-direction: column;
+  
+          flex-direction: column;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  
+}
+
+.checkout__divider {
+  width: 50%;
+  background-color: rgba(247, 248, 250, 1);
+}
+
+.checkout__coupon-input {
+  margin: 10px;
+  height: 40px;
+}
+
+.checkout_discount {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 10px;
+  width: 100%;
+}
+
+.checkout_subtotal {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 10px;
+  width: 100%;
+}
+
+.checkout_result {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 10px;
+  width: 100%;
+}
+
+
+.checkout_label-bold {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-flex-basis: 0;
+      -ms-flex-preferred-size: 0;
+          flex-basis: 0;
+}
+
+.checkout_amount-strikeout {
+  text-decoration: line-through;
+  font-weight: bold;
+}
+
+.checkout_amount-saving {
+    font-weight: bold;
+    color: rgba(255, 0, 0, 1);
+}
+
+.checkout_discount-label {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-flex-basis: 0;
+      -ms-flex-preferred-size: 0;
+          flex-basis: 0;
+}
+
+.checkout_button {
+  margin-left: 10%;
+  height: 80px;
+  width:80%;
+  background-color: rgba(33,110,40,0.42);
+  
+  -webkit-box-orient: horizontal;
+  
+  -webkit-box-direction: normal;
+  
+  -webkit-flex-direction: row;
+  
+      -ms-flex-direction: row;
+  
+          flex-direction: row;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.checkout_button-img {
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+}
+
+.checkout_button-text {
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+  color: white;
+  padding-left: 10px;
+}
+
+@media (max-width: 950px) {
+
+.site__right-sidebar {
+  width:40%;
+}
+
+.product {
+  width:100%;
+}
+
+.site__main {
+  width:60%;
+}
+}
+
+@media (max-width: 600px) {
+
+.site__right-sidebar {     
+  width:80%;
+  opacity: 0.3;
+}
+
+.product {
+  width:100%;
+}
+
+.site_main {
+  width:100%;
+}
+
+.site__left-sidebar {
+  width:0;
+  opacity: 0;
+}
+
+.site__content {
+  padding-left: 0px;
+}
+}
 /*a:hover {
   font-weight: 400;
   color: #DADADA;
