@@ -7,7 +7,14 @@ css:
 server:
 	browser-sync start --server --files='index.html,bundle/app.css,js/app.js'
 
+.PHONY: js
+js:
+	babel --watch js/app.jsx --out-file build/app.js
 
 .PHONY: clean
 clean:
 	rm -r bundle
+
+.PHONY: all
+all:
+	(make css & make js & make server & wait)
