@@ -17,10 +17,13 @@
     "autoprefixer": "^6.0.2",
     "babel": "^5.8.23",
     "babel-cli": "^6.3.17",
+    "babel-core": "^5.8.34",
+    "babel-loader": "^5.3.3",
     "browser-sync": "^2.9.3",
     "clean-css": "^3.4.3",
     "postcss-cli": "^2.1.0",
     "postcss-import": "^7.0.0",
-    "react": "^0.13.3"
+    "react": "^0.13.3",
+    "webpack": "^1.12.2"
   }
 }
